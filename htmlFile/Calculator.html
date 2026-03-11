@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="">
+        <form onsubmit="event.preventDefault();handleSubmit()">
+            <label>
+                <input id="field" type="text" disabled>
+            </label>
+            <br>
+            <button type="button" name="number" value="1">1</button>
+            <button type="button" name="number" value="2">2</button>
+            <button type="button" name="number" value="3">3</button>
+
+            <button type="button" name="opp" value="+">+</button>
+
+            <br>
+
+            <button type="button" name="number" value="4">4</button>
+            <button type="button" name="number" value="5">5</button>
+            <button type="button" name="number" value="6">6</button>
+
+            <button type="button" name="opp" value="-">-</button>
+
+            <br>
+
+            <button type="button" name="number" value="7">7</button>
+            <button type="button" name="number" value="8">8</button>
+            <button type="button" name="number" value="9">9</button>
+
+            <button type="button" name="opp" value="*">*</button>
+            <br>
+
+            <button type="button" value="clear" onclick="clearScreen()">C</button>
+            <button type="button" name="number" value="0">0</button>
+            <button type="submit" >=</button>
+            <button type="button" name="opp" value="/">/</button>
+            <br>
+
+            <button type="button" name="opp" value="(">(</button>
+            <button type="button" name="opp" value=")">)</button>
+        </form>
+    </div>
+
+<script src="../jsFile/Caculator.js"></script>
+<script>
+    let string = "(1+2+3)*4";
+    let resultStrung = eval(string);
+    console.log(resultStrung);
+</script>
+</body>
+</html>
